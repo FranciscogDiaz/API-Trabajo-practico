@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Trabajo practico</title>
+</head>
+
+<body>
+  <header>
+    <h1>Trabajo practico</h1>
+  </header>
+  <dialog id="modal">
+    <form action="" method="dialog" id="formAdd" class="formAdd">
+      <h3 id="title">Editar Usuario</h3>
+      <label for="name">Nombre de usuario
+        <input type="text" id="name" name="name" required>
+      </label>
+      <label for="email">Correo Electrónico
+        <input type="email" id="email" name="email" required>
+      </label>
+      <label for="phone">Teléfono
+        <input type="tel" id="phone" name="phone" required>
+
+      </label>
+
+      <input type="submit" value="Aceptar" class="btnDialog">
+      <input type="reset" value="Resetear" class="btnDialog">
+      <input type="button" value="Cancelar" id="close-modal" class="btnDialog">
+    </form>
+  </dialog>
+
+  <dialog id="modal2">
+    <form action="" method="dialog" id="formAdd2" class="formAdd2">
+      <h3 id="title">Agregar Usuario</h3>
+      <label for="name">Nombre de usuario
+        <input type="text" id="name2" name="name" required>
+      </label>
+      <label for="email">Correo Electrónico
+        <input type="email" id="email2" name="email" required>
+      </label>
+      <label for="phone">Teléfono
+        <input type="tel" id="phone2" name="phone" required>
+      </label>
+      <input type="submit" value="Aceptar" class="btnDialog">
+      <input type="reset" value="Resetear" class="btnDialog">
+      <input type="button" value="Cancelar" id="close-modal2" class="btnDialog">
+    </form>
+  </dialog>
+
+  <div id="search-container">
+    <input type="text" id="search-input" placeholder="Buscar usuario...">
+    <button id="search-button">Buscar</button>
+    <button id="back-button">Volver</button>
+    <button id="open-modal-add">Añadir Usuario</button>
+  </div>
+
+  <table id="tabla">
+    <thead>
+      <tr>
+        <th>Usuario</th>
+        <th>Correo Electrónico</th>
+        <th>Telefono</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <script type="module" src="index.js" defer></script>
+</body>
+
+</html>
